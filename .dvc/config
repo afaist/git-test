@@ -1,0 +1,6 @@
+['remote "myremote"']
+url = ssh://git@github/afaist/git-test
+user = afaist
+[core]
+loglevel = debug
+remote = myremote

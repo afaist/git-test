@@ -56,7 +56,7 @@ def process_posts(fd_in, fd_out_train, fd_out_test, target_tag):
 mkdir_p(os.path.join('data', 'prepared'))
 
 with io.open(input, encoding='utf8') as fd_in:
-    with open(output_train, 'w', encoding='utf8') as fd_out_train:
-        with open(output_test, 'w', encoding='utf8') as fd_out_test:
+    with open(output_train, 'w') as fd_out_train:
+        with open(output_test, 'w') as fd_out_test:
             process_posts(fd_in, fd_out_train, fd_out_test, u'<python>')
 
