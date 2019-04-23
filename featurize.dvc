@@ -1,0 +1,14 @@
+cmd: python src/featurization.py data/prepared data/features
+deps:
+- md5: 493092e51e1ae5f130070195f77af6b4
+  path: src/featurization.py
+- md5: 35b20d4c706139fca9d053920e82c905.dir
+  path: data/prepared
+md5: 80e5c0d36a5e598129192198f3099b91
+outs:
+- cache: true
+  md5: 3338d2c21bdb521cda0ba4add89e1cb0.dir
+  metric: false
+  path: data/features
+  persist: false
+wdir: .
